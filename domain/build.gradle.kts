@@ -1,11 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
 }
 
 android {
-    namespace = "ru.vafeen.presentation"
+    namespace = "ru.vafeen.domain"
     compileSdk = 36
 
     defaultConfig {
@@ -34,15 +33,7 @@ android {
 }
 
 dependencies {
-    api(project(":domain"))
-    // Compose
-    api(platform(libs.androidx.compose.bom))
-    api(libs.bundles.compose)
-
-    // Compose tests
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.bundles.compose.debug)
+    api(libs.bundles.core)
 
     // Tests
     testImplementation(libs.junit)

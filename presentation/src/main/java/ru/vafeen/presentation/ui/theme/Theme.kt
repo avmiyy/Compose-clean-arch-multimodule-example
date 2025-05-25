@@ -1,4 +1,4 @@
-package ru.vafeen.example.ui.theme
+package ru.vafeen.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeCleanArchMultimoduleExample">
         <activity
-            android:name=".MainActivity"
+            android:name="ru.vafeen.presentation.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.ComposeCleanArchMultimoduleExample">
             <intent-filter>

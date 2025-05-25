@@ -10,7 +10,6 @@ activityCompose = "1.10.1"
 composeBom = "2025.05.01"
 appcompat = "1.7.0"
 material = "1.12.0"
-sdk = "36"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,3 +35,11 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 
+[bundles]
+core = ["androidx-core-ktx", "androidx-appcompat", "material", "androidx-lifecycle-runtime-ktx"]
+compose = ["androidx-ui",
+    "androidx-ui-graphics",
+    "androidx-ui-tooling-preview",
+    "androidx-material3",
+    "androidx-activity-compose"]
+compose-debug = ["androidx-ui-tooling", "androidx-ui-test-manifest"]
