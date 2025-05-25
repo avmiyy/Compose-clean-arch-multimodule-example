@@ -43,15 +43,6 @@ dependencies {
     implementation(project(":presentation"))
     implementation(project(":data"))
 
-    // Compose
-//    implementation(platform(libs.androidx.compose.bom))
-//    implementation(libs.bundles.compose)
-
-    // Compose tests
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.bundles.compose.debug)
-
     // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

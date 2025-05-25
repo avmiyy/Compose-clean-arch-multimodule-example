@@ -29,5 +29,5 @@ jobs:
             echo "❌ APK не собран!"
             exit 1
           else
-            echo "✅ APK успешно создан: Android/app/build/outputs/apk/debug/app-debug.apk"
+            echo "✅ APK успешно создан!"
           fi
