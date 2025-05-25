@@ -21,7 +21,6 @@ jobs:
 
       - name: Build Debug APK
         run: |
-          cd ./Android
           ./gradlew assembleDebug
 
       - name: Verify APK Exists
