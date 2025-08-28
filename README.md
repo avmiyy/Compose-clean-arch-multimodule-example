@@ -1,5 +1,9 @@
 # Compose clean arch multimodule example 
 
+- Compose
+- Hilt
+- Room
+
 ## Modules schema:
 
 ```mermaid 
